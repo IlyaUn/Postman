@@ -1,0 +1,228 @@
+{
+	"info": {
+		"_postman_id": "e98f6dd6-be24-4575-b812-2a03e2539a15",
+		"name": "Р”Р— 7 Unukovich",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "jivo",
+			"item": [
+				{
+					"name": "РђРІС‚РѕСЂРёР·Р°С†РёСЏ РІ Jivo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "login",
+									"value": "i-lua1@mail.ru",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Test_1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://api.jivosite.com/api/1.0/auth/agent/access",
+							"protocol": "https",
+							"host": [
+								"api",
+								"jivosite",
+								"com"
+							],
+							"path": [
+								"api",
+								"1.0",
+								"auth",
+								"agent",
+								"access"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "РЎРѕР·РґР°РЅРёРµ РџРµС‚СЂРѕРІР°",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\t{\"name\":\"Petrov\",\"salary\":\"100000\",\"age\":\"30\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{host}}/create",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "РЎРѕР·РґР°РЅРёРµ РРІР°РЅРѕРІР°",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\t{\"name\":\"Ivanov\",\"salary\":\"50000\",\"age\":\"25\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{host}}/create",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "РЎРѕР·РґР°РЅРёРµ РЎРёРґРѕСЂРѕРІР°",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\t{\"name\":\"Sidorov\",\"salary\":\"2000000\",\"age\":\"40\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{host}}/create",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "РР·РјРµРЅРµРЅРёРµ РґР°РЅРЅС‹С… СЃСѓС‰РµСЃС‚РІСѓСЋС‰РµРіРѕ СЂР°Р±РѕС‡РµРіРѕ",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"Tiger Nixon\",\"firstsalary\":\"320800\",\"lastsalary\":\"200000\",\"firstage\":\"61\",\"lastage\":\"30\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{host}}/update/1",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"update",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "РџРѕР»СѓС‡РµРЅРёРµ РёРЅС„РѕСЂРјР°С†РёРё РѕР± РѕРґРЅРѕРј РёР· СЂР°Р±РѕС‡РёС…",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{host}}/employee/7",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"employee",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "РЈРґР°Р»РµРЅРёРµ СЂР°Р±РѕС‡РµРіРѕ",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://{{host}}/delete/3",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"delete",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "РџРѕР»СѓС‡РµРЅРёРµ РґР°РЅРЅС‹С… Рѕ РІСЃРµС… СЂР°Р±РѕС‡РёС…",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://dummy.restapiexample.com/api/v1/employees",
+					"protocol": "http",
+					"host": [
+						"dummy",
+						"restapiexample",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "dummy.restapiexample.com/api/v1"
+		}
+	]
+}
